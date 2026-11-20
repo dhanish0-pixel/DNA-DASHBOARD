@@ -2,7 +2,7 @@ services:
   - type: web
     name: house-of-dna
     runtime: python
-    buildCommand: "cd frontend && npm install && npm run build && cd ../backend && pip install -r requirements.txt && python seed_data.py"
+    buildCommand: "cd backend && pip install -r requirements.txt && python seed_data.py"
     startCommand: "cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
     envVars:
       - key: USE_SQLITE_FALLBACK

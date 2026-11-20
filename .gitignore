@@ -19,10 +19,6 @@ backend/*.db
 smart_store.db
 backend/smart_store.db
 
-# Build outputs
-dist/
-frontend/dist/
-
 # OS and Editor
 .DS_Store
 Thumbs.db
